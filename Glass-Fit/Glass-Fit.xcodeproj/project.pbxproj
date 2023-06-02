@@ -18,7 +18,6 @@
 		3E0A381A2A2A2523007F1913 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A38192A2A2523007F1913 /* ARViewContainer.swift */; };
 		3E23B4BC2A2A040B00855B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23B4BB2A2A040B00855B57 /* AppDelegate.swift */; };
 		3E23B4BE2A2A040B00855B57 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23B4BD2A2A040B00855B57 /* MainScreen.swift */; };
-		3E23B4C02A2A040B00855B57 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3E23B4BF2A2A040B00855B57 /* Experience.rcproject */; };
 		3E23B4C22A2A040D00855B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E23B4C12A2A040D00855B57 /* Assets.xcassets */; };
 		3E23B4C52A2A040D00855B57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E23B4C42A2A040D00855B57 /* Preview Assets.xcassets */; };
 		3E23B4CF2A2A040E00855B57 /* Glass_FitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23B4CE2A2A040E00855B57 /* Glass_FitTests.swift */; };
@@ -48,7 +47,6 @@
 		3E23B4B82A2A040B00855B57 /* Glass-Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass-Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E23B4BB2A2A040B00855B57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E23B4BD2A2A040B00855B57 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
-		3E23B4BF2A2A040B00855B57 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		3E23B4C12A2A040D00855B57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E23B4C42A2A040D00855B57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E23B4CA2A2A040E00855B57 /* Glass-FitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Glass-FitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				3E23B4C12A2A040D00855B57 /* Assets.xcassets */,
-				3E23B4BF2A2A040B00855B57 /* Experience.rcproject */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -325,7 +322,6 @@
 				3E0A38082A2A23E3007F1913 /* Routing.swift in Sources */,
 				3E23B4BC2A2A040B00855B57 /* AppDelegate.swift in Sources */,
 				3E0A381A2A2A2523007F1913 /* ARViewContainer.swift in Sources */,
-				3E23B4C02A2A040B00855B57 /* Experience.rcproject in Sources */,
 				3E0A38092A2A23E3007F1913 /* AppRouter+Views.swift in Sources */,
 				3E0A38152A2A2414007F1913 /* SettingsScreen.swift in Sources */,
 				3E0A38072A2A23E3007F1913 /* SheetRoute.swift in Sources */,
