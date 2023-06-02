@@ -3,7 +3,7 @@
 //  This source code is licensed under the GNU General Public License v3.0 license
 //  found in the LICENSE file in the root directory of this source tree.
 //
-//  ContentView.swift
+//  ARViewContainer.swift
 //  Glass-Fit
 //
 //  Created by Mouna Rezgui on 2/6/2023.
@@ -11,12 +11,6 @@
 
 import SwiftUI
 import RealityKit
-
-struct ContentView : View {
-    var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
-    }
-}
 
 struct ARViewContainer: UIViewRepresentable {
     
@@ -37,11 +31,3 @@ struct ARViewContainer: UIViewRepresentable {
     func updateUIView(_ uiView: ARView, context: Context) {}
     
 }
-
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-#endif
