@@ -22,6 +22,8 @@
 		3E23B4C52A2A040D00855B57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E23B4C42A2A040D00855B57 /* Preview Assets.xcassets */; };
 		3E23B4CF2A2A040E00855B57 /* Glass_FitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23B4CE2A2A040E00855B57 /* Glass_FitTests.swift */; };
 		3E23B4E92A2A06A200855B57 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3E23B4E82A2A06A200855B57 /* Config.xcconfig */; };
+		3ECAB26F2A2A799B0075043E /* AppArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECAB26E2A2A799B0075043E /* AppArgs.swift */; };
+		3ECAB2712A2A79F90075043E /* TestsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECAB2702A2A79F90075043E /* TestsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		3E23B4CA2A2A040E00855B57 /* Glass-FitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Glass-FitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E23B4CE2A2A040E00855B57 /* Glass_FitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glass_FitTests.swift; sourceTree = "<group>"; };
 		3E23B4E82A2A06A200855B57 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		3ECAB26E2A2A799B0075043E /* AppArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppArgs.swift; sourceTree = "<group>"; };
+		3ECAB2702A2A79F90075043E /* TestsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				3E23B4BB2A2A040B00855B57 /* AppDelegate.swift */,
+				3ECAB26E2A2A799B0075043E /* AppArgs.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			children = (
 				3E0A38142A2A2414007F1913 /* SettingsScreen.swift */,
 				3E23B4BD2A2A040B00855B57 /* MainScreen.swift */,
+				3ECAB2702A2A79F90075043E /* TestsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -322,9 +328,11 @@
 				3E0A38082A2A23E3007F1913 /* Routing.swift in Sources */,
 				3E23B4BC2A2A040B00855B57 /* AppDelegate.swift in Sources */,
 				3E0A381A2A2A2523007F1913 /* ARViewContainer.swift in Sources */,
+				3ECAB26F2A2A799B0075043E /* AppArgs.swift in Sources */,
 				3E0A38092A2A23E3007F1913 /* AppRouter+Views.swift in Sources */,
 				3E0A38152A2A2414007F1913 /* SettingsScreen.swift in Sources */,
 				3E0A38072A2A23E3007F1913 /* SheetRoute.swift in Sources */,
+				3ECAB2712A2A79F90075043E /* TestsScreen.swift in Sources */,
 				3E0A38132A2A2400007F1913 /* MainViewModelFactory.swift in Sources */,
 				3E0A38122A2A2400007F1913 /* MainViewModel.swift in Sources */,
 			);
@@ -541,11 +549,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).$(PRODUCT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -562,11 +570,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).$(PRODUCT_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

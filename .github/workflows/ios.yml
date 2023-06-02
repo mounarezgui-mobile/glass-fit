@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     name: Unit tests
-    runs-on: macos-latest
+    runs-on: macos-12
     env:
       SOURCE_PACKAGES_PATH: .spm
     steps:
@@ -22,11 +22,5 @@ jobs:
           xcode-version: '14.2'
 
       - name: Run tests
-        uses: sersoft-gmbh/xcodebuild-action@v2
-        with:
-          project: Glass-Fit/Glass-Fit.xcodeproj
-          scheme: Glass-Fit
-          destination: platform=iOS Simulator,OS=16.2,name=iPhone 11
-          action: test
-          configuration: Debug
-          build-settings: CODE_SIGNING_REQUIRED=NO
+        run: |
+          xcodebuild clean build test CODE_SIGNING_REQUIRED=NO -project Glass-Fit/Glass-Fit.xcodeproj -scheme Glass-Fit -destination 'platform=iOS Simulator,name=iPhone 8 Plus,OS=16.2' -configuration Debug

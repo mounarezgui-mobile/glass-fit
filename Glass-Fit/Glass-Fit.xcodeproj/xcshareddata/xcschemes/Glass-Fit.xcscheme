@@ -39,17 +39,6 @@
                ReferencedContainer = "container:Glass-Fit.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E23B4D32A2A040E00855B57"
-               BuildableName = "Glass-FitUITests.xctest"
-               BlueprintName = "Glass-FitUITests"
-               ReferencedContainer = "container:Glass-Fit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

@@ -16,8 +16,13 @@ extension AppRouter {
         SettingsScreen()
     }
     
-    func start() -> MainScreen {
-        let viewModel = MainViewModelFactory.create(appRouter: self)
-        return MainScreen(viewModel: viewModel)
+    @ViewBuilder
+    func start() -> some View {
+        if AppArgs.isRunningUnitTests {
+            TestsScreen()
+        } else {
+            let viewModel = MainViewModelFactory.create(appRouter: self)
+            MainScreen(viewModel: viewModel)
+        }
     }
 }
