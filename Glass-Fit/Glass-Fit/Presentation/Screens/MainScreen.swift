@@ -14,7 +14,20 @@ import SwiftUI
 struct MainScreen : View {
     @StateObject var viewModel: MainViewModel
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack {
+            ARViewContainer(controller: viewModel.arController).edgesIgnoringSafeArea(.all)
+            VStack {
+                Spacer()
+                Button("Next", action: {
+                    viewModel.didSelectGlasses()
+                })
+                .font(.title2)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.pink)
+                .cornerRadius(20)
+            }
+        }
     }
 }
 

@@ -22,6 +22,10 @@
 		3E23B4C52A2A040D00855B57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E23B4C42A2A040D00855B57 /* Preview Assets.xcassets */; };
 		3E23B4CF2A2A040E00855B57 /* Glass_FitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23B4CE2A2A040E00855B57 /* Glass_FitTests.swift */; };
 		3E23B4E92A2A06A200855B57 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3E23B4E82A2A06A200855B57 /* Config.xcconfig */; };
+		3E4761462A3C79E300E87BA8 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3E4761452A3C79E300E87BA8 /* Experience.rcproject */; };
+		3E4761492A3C7CDC00E87BA8 /* ARViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4761482A3C7CDC00E87BA8 /* ARViewCoordinator.swift */; };
+		3E47614C2A3C7D2500E87BA8 /* ARController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E47614B2A3C7D2500E87BA8 /* ARController.swift */; };
+		3EA537C12A544713006D65C4 /* GlassesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA537C02A544713006D65C4 /* GlassesType.swift */; };
 		3ECAB26F2A2A799B0075043E /* AppArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECAB26E2A2A799B0075043E /* AppArgs.swift */; };
 		3ECAB2712A2A79F90075043E /* TestsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECAB2702A2A79F90075043E /* TestsScreen.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +58,10 @@
 		3E23B4CA2A2A040E00855B57 /* Glass-FitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Glass-FitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E23B4CE2A2A040E00855B57 /* Glass_FitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glass_FitTests.swift; sourceTree = "<group>"; };
 		3E23B4E82A2A06A200855B57 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		3E4761452A3C79E300E87BA8 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		3E4761482A3C7CDC00E87BA8 /* ARViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewCoordinator.swift; sourceTree = "<group>"; };
+		3E47614B2A3C7D2500E87BA8 /* ARController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARController.swift; sourceTree = "<group>"; };
+		3EA537C02A544713006D65C4 /* GlassesType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesType.swift; sourceTree = "<group>"; };
 		3ECAB26E2A2A799B0075043E /* AppArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppArgs.swift; sourceTree = "<group>"; };
 		3ECAB2702A2A79F90075043E /* TestsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +131,8 @@
 		3E0A38162A2A24F1007F1913 /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				3E47614A2A3C7D1800E87BA8 /* Controller */,
+				3E4761472A3C7CD000E87BA8 /* Coordinator */,
 				3E0A38172A2A2503007F1913 /* Views */,
 			);
 			path = AR;
@@ -158,6 +168,7 @@
 		3E23B4BA2A2A040B00855B57 /* Glass-Fit */ = {
 			isa = PBXGroup;
 			children = (
+				3EA537BE2A5446FC006D65C4 /* Domain */,
 				3E9A99952A2A23170027031E /* Resources */,
 				3E0A38012A2A23E2007F1913 /* Navigation */,
 				3E9A99942A2A230B0027031E /* App */,
@@ -183,6 +194,22 @@
 			path = "Glass-FitTests";
 			sourceTree = "<group>";
 		};
+		3E4761472A3C7CD000E87BA8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3E4761482A3C7CDC00E87BA8 /* ARViewCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3E47614A2A3C7D1800E87BA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E47614B2A3C7D2500E87BA8 /* ARController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3E9A99932A2A23030027031E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +233,7 @@
 		3E9A99952A2A23170027031E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3E4761452A3C79E300E87BA8 /* Experience.rcproject */,
 				3E23B4C12A2A040D00855B57 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -219,6 +247,22 @@
 				3ECAB2702A2A79F90075043E /* TestsScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		3EA537BE2A5446FC006D65C4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3EA537BF2A544703006D65C4 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3EA537BF2A544703006D65C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3EA537C02A544713006D65C4 /* GlassesType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,8 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E0A380D2A2A23F2007F1913 /* PreviewStubs.swift in Sources */,
+				3E4761492A3C7CDC00E87BA8 /* ARViewCoordinator.swift in Sources */,
 				3E0A38062A2A23E2007F1913 /* AppRouter.swift in Sources */,
+				3EA537C12A544713006D65C4 /* GlassesType.swift in Sources */,
 				3E23B4BE2A2A040B00855B57 /* MainScreen.swift in Sources */,
+				3E47614C2A3C7D2500E87BA8 /* ARController.swift in Sources */,
 				3E0A38082A2A23E3007F1913 /* Routing.swift in Sources */,
 				3E23B4BC2A2A040B00855B57 /* AppDelegate.swift in Sources */,
 				3E0A381A2A2A2523007F1913 /* ARViewContainer.swift in Sources */,
@@ -334,6 +381,7 @@
 				3E0A38072A2A23E3007F1913 /* SheetRoute.swift in Sources */,
 				3ECAB2712A2A79F90075043E /* TestsScreen.swift in Sources */,
 				3E0A38132A2A2400007F1913 /* MainViewModelFactory.swift in Sources */,
+				3E4761462A3C79E300E87BA8 /* Experience.rcproject in Sources */,
 				3E0A38122A2A2400007F1913 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

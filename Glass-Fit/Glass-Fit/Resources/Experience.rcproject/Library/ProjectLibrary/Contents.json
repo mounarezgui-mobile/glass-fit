@@ -1,0 +1,47 @@
+[
+  {
+    "libraryIdentifier" : "6559715353b02966afdacd351b6b8a5e",
+    "format" : "model",
+    "displayName" : "wayfare.usdz"
+  },
+  {
+    "libraryIdentifier" : "159453b23a795f45525d0643c1a3b5db",
+    "format" : "model",
+    "displayName" : "geometric.usdz"
+  },
+  {
+    "libraryIdentifier" : "8a04b22a42a38c0b6b7587a99d0fab8e",
+    "format" : "model",
+    "displayName" : "aviator_black.usdz"
+  },
+  {
+    "libraryIdentifier" : "3cd4584eb5ea95e2640212a1ceb150dd",
+    "format" : "model",
+    "displayName" : "browline.usdz"
+  },
+  {
+    "libraryIdentifier" : "e8a20d32f811da80d352883480880e07",
+    "format" : "model",
+    "displayName" : "cateye.usdz"
+  },
+  {
+    "libraryIdentifier" : "cd9a0e2a1695adb8839c0925d9a0ec26",
+    "format" : "model",
+    "displayName" : "rectangle.usdz"
+  },
+  {
+    "libraryIdentifier" : "210ff02d45e2595fb3c894535a2fa49f",
+    "format" : "model",
+    "displayName" : "round.usdz"
+  },
+  {
+    "libraryIdentifier" : "712f2a11421cb72ee1100cefcfe595f0",
+    "format" : "model",
+    "displayName" : "square1.usdz"
+  },
+  {
+    "libraryIdentifier" : "f061033c21d929d2da436e20e8e285fe",
+    "format" : "model",
+    "displayName" : "square2.usdz"
+  }
+]
