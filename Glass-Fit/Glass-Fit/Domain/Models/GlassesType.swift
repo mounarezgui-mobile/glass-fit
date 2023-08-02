@@ -11,7 +11,7 @@
 
 import Foundation
 
-enum GlassesType: CaseIterable {
+enum GlassesType: String, CaseIterable, CustomStringConvertible {
     case wayfare
     case geometric
     case aviator
@@ -21,4 +21,8 @@ enum GlassesType: CaseIterable {
     case round
     case square
     case oval
+    
+    var description: String {
+        self.rawValue.capitalized
+    }
 }

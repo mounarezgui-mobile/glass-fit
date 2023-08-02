@@ -13,20 +13,15 @@ import Combine
 final class MainViewModel: ObservableObject {
     let appRouter: AppRouter
     @Published var arController = ARController()
+    let glassesTypes = GlassesType.allCases
+    @Published var selectedGlassesType: GlassesType? = nil
     
     init(appRouter: AppRouter) {
         self.appRouter = appRouter
+        arController.$selectedGlassesType.assign(to: &self.$selectedGlassesType)
     }
     
-    func didSelectGlasses() {
-        let allGlassesTypes = GlassesType.allCases
-        
-        if let selectedGlassesType = arController.selectedGlassesType {
-            var index = allGlassesTypes.firstIndex(of: selectedGlassesType)!
-            index = index == allGlassesTypes.count - 1 ? 0 : index + 1
-            arController.selectedGlassesType = allGlassesTypes[index]
-        } else {
-            arController.selectedGlassesType = allGlassesTypes.first
-        }
+    func didSelectGlasses(item: GlassesType) {
+        arController.selectedGlassesType = item
     }
 }

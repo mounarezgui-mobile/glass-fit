@@ -13,19 +13,41 @@ import SwiftUI
 
 struct MainScreen : View {
     @StateObject var viewModel: MainViewModel
+    
     var body: some View {
         ZStack {
             ARViewContainer(controller: viewModel.arController).edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                Button("Next", action: {
-                    viewModel.didSelectGlasses()
-                })
-                .font(.title2)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.pink)
-                .cornerRadius(20)
+                
+                ScrollView(.horizontal) {
+                    HStack(spacing: 5) {
+                        ForEach(viewModel.glassesTypes, id: \.rawValue) { item in
+                            Button(action: {
+                                viewModel.didSelectGlasses(item: item)
+                            }, label: {
+                                VStack {
+                                    Image(item.rawValue)
+                                        .resizable()
+                                        .renderingMode(.template)
+                                        .aspectRatio(contentMode: .fit)
+                                        
+                                        .frame(height: 25)
+                                    
+                                    Text(item.description)
+                                    
+                                }
+                            })
+                            .font(.title2)
+                            .frame(minWidth: 120)
+                            .padding()
+                            .foregroundColor(viewModel.selectedGlassesType == item ? .black : .white)
+                            .background(viewModel.selectedGlassesType?.rawValue == item.rawValue ? .yellow : .accentColor)
+                            .cornerRadius(20)
+                            
+                        }
+                    }
+                }
             }
         }
     }
