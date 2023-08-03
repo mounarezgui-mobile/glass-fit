@@ -16,7 +16,11 @@ struct MainScreen : View {
     
     var body: some View {
         ZStack {
-            ARViewContainer(controller: viewModel.arController).edgesIgnoringSafeArea(.all)
+            if !AppArgs.isSimulator {
+                ARViewContainer(controller: viewModel.arController).edgesIgnoringSafeArea(.all)
+            } else {
+                Color.gray.ignoresSafeArea(.all)
+            }
             VStack {
                 Spacer()
                 

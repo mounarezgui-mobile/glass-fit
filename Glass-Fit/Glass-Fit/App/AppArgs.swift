@@ -17,4 +17,13 @@ enum AppArgs {
         NSClassFromString("XCTestCase") != nil
     }
     
+    static var isSimulator: Bool {
+#if targetEnvironment(simulator)
+        print("Running on simulator")
+        return true
+#else
+        print("Running on a real device")
+        return true
+#endif
+    }
 }
